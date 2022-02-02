@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/LOGO_OFFICIAL.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/b7ad1e7c7a.js" crossorigin="anonymous"></script>
+    <title>Add Post</title>
+</head>
+
+<body>
+    <section class="section-add-event">
+
+        <div class="add-event-box">
+            <a href="#" class="login-box__button-login">Add event</a>
+
+            <form id="login-form" method="post" action="#" class="add-event-form">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Title</label>
+                    <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <select name="tag" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option disabled> Select Category</option>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Event image</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <input type="submit" id="submit-button" name="submit-login" class="login-button">
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

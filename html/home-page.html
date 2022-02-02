@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/LOGO_OFFICIAL.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/b7ad1e7c7a.js" crossorigin="anonymous"></script>
+    <title>Cyborg</title>
+</head>
+
+<body>
+
+    <section class="section-navigation-bar">
+
+        <nav class="navbar navbar-expand-lg cyborg-navbar">
+            <div class="container-fluid cyborg-navbar__container">
+                <a class="navbar-brand cyborg-navbar__brand" href="#">
+                    <img src="../resources/LOGO_OFFICIAL.png" alt="" class="cyborg-navbar__logo d-inline-block align-text-top">
+                </a>
+                <button button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class=""><i class="fa-solid fa-circle-chevron-down cyborg-navbar__toggler-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse cyborg-navbar__list-container" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav  cyborg-navbar__list">
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="login.php" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="signup.php" class="nav-link">Signup</a>
+                        </li>
+                        <!-- Example split danger button -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </li>   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </section>
+
+    <section class="section-intro">
+
+        <div class="intro">
+            <video class="intro__bg-video d-flex justify-content-center" preload="none" autoplay muted loop
+                disablepictureinpicture>
+                <source src="../resources/KUET_CYBORG_INTRO.mp4" type="video/mp4">
+                Your browser is not supported!
+            </video>
+        </div>
+
+    </section>
+
+    <!-- <section class="section-cyborg-intels">
+        <div class="card mb-3 cyborg-intels">
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <img src="../resources/Nivera post.jpg" class="cyborg-intels__image" alt="...">
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body cyborg-intels__body">
+                        <h2 class="card-title">Card title</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<h1 class="section-title">Cyborg Intels</h1>
+<section class="section-cyborg-intels">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="cyborg-intels__main--intels-card">
+                    <div class="cyborg-intels__main--intels-image-data">
+                        <img src="../resources/Intels/Nivera_post.jpg" class="intels__main--intels-background-image"
+                            alt="Niver post">
+                    </div>
+                    <div class="cyborg-intels__main--intels-info">
+                        <h1 class="cyborg-intels__main--intels-title">Welcome Liquid Nivera</h1>
+                        <div class="cyborg-intels__main--intels-publication-details">
+                            <a href="" class="cyborg-intels__main--intels-author"><i class="fas fa-user"></i>Samiul Baree</a>
+                            <span class="cyborg-intels__main--intels-date"><i class="fas fa-calendar alt"></i>Friday, 14
+                                january 2022</span>
+                        </div>
+                        <p class="cyborg-intels__main--intels-description">Nabil 'Nivera' Benrlitom is the latest
+                            CS:GO professional to move to Riot Games’ title. He will link up with his
+                            brother,
+                            Adil 'ScreaM' Benrlitom, on Team Liquid. He will replace James ‘Kryptix’
+                            Affleck.
+                        </p>
+                        <div class="cyborg-intels__main--intels-tag">
+                            <a>Valorant</a>
+                        </div>
+                        <div class="cyborg-intels__main--intels-cta">
+                            <a href="#">Read more &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <button class="carousel-control-prev .cyborg-intels__control-left" type="button"
+            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next .cyborg-intels__control-right" type="button"
+            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</section>
+
+    <h1 class="section-title">Cyborg Teams</h1>
+    <section class="section-teams">
+        <div class="cyborg-teams">
+            <h3 class="cyborg-teams__tag">VALORANT Teams</h3>
+            <div class="cyborg-teams__container">
+                <div class="row">
+                    <div class="cyborg-teams__img-container col-md-6">
+                        <img src="../resources/KC_Primus.jpg" alt="KC_Primus" class="cyborg-teams__img">
+                        <h2 class="cyborg-teams__name">KUET Cyborg Primus</h2>
+                    </div>
+                    <div class="cyborg-teams__img-container col-md-6">
+                        <img src="../resources/KC_Ironhide.jpg" alt="KC_Ironhide" class="cyborg-teams__img">
+                        <h2 class="cyborg-teams__name">KUET Cyborg Ironhide</h2>
+                    </div>
+                    <div class="cyborg-teams__img-container col-md-6 ms-auto me-auto">
+                        <img src="../resources/KC_Ultron.jpg" alt="KC_Ultron" class="cyborg-teams__img">
+                        <h2 class="cyborg-teams__name">KUET Cyborg Ultron</h2>
+                    </div>
+                </div>
+            </div>
+            <h3 class="cyborg-teams__tag">PUBG Teams</h3>
+            <div class="cyborg-teams__container col-lg-6 ms-auto me-auto">
+                <div class="cyborg-teams__img-container">
+                    <img src="../resources/K-19.jpg" alt="K-19" class="cyborg-teams__img">
+                    <h2 class="cyborg-teams__name">K-19</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="section-title">Events</h1>
+    <section class="section-cyborg-events">
+        <div class="events">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="events-card">
+                        <div class="events__image-container">
+                            <img src="../resources/Events/IKPT.jpg" alt="" class="events__image">
+                        </div>
+                        <div class="events__title">
+                            <a href="#">Intra Kuet PUBG Tournament</a>
+                        </div>
+                        <div class="events__details">
+                            <a href="#" class="events__details--category">PUBG</a>
+                            <a href="" class="events__details--date">Friday, 14 January 2022</a>
+                            <p class="events__details--text">Hello Everyone, KUET CYBORG is going to organize a PUBG
+                                Tournament among KUETians.
+                                Platform : Mobile & Emulator Both.
+                                Match will be in DUO format.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="events-card">
+                        <div class="events__image-container">
+                            <img src="../resources/Events/IKVT.jpg" alt="" class="events__image">
+                        </div>
+                        <div class="events__title">
+                            <a href="#">Intra Kuet VALORANT Tournament</a>
+                        </div>
+                        <div class="events__details">
+                            <a href="#" class="events__details--category">VALORANT</a>
+                            <a href="" class="events__details--date">Friday, 14 January 2022</a>
+                            <p class="events__details--text">Hey there, getting bored in this vacation? Have nothing to
+                                do? Idling away your time?
+                                We've got the right medicine for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="events-card">
+                        <div class="events__image-container">
+                            <img src="../resources/Events/Cybertron_VT.jpg" alt="" class="events__image">
+                        </div>
+                        <div class="events__title">
+                            <a href="#">Cybertron VALORANT Tournament</a>
+                        </div>
+                        <div class="events__details">
+                            <a href="#" class="events__details--category">VALORANT</a>
+                            <a href="" class="events__details--date">Friday, 14 January 2022</a>
+                            <p class="events__details--text">TOURNAMENT ANNOUNCEMENT
+
+                                Hello Agents, We; KUET CYBORG will be holding a highly competitive and action-packed...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="" class="read_more-button">All Events &rarr;</a>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <div class="footer__socials">
+            <a href="facebook.com" class="footer__socials--icon">
+                <!-- <img src="../resources/ICONS/facebook-brands.svg" alt="Facebook"> -->
+                <i class="fa-brands fa-facebook footer__socials--icon-facebook"></i>
+                Facebook
+            </a>
+            <a href="discord.com" class="footer__socials--icon">
+                <!-- <img src="../resources/ICONS/discord-brands.svg" alt="Discord"> -->
+                <i class="fa-brands fa-discord footer__socials--icon-discord"></i>
+                Discord
+            </a>
+            <a href="youtube.com" class="footer__socials--icon">
+                <!-- <img src="../resources/ICONS/youtube-brands.svg" alt="Youtube"> -->
+                <i class="fa-brands fa-youtube footer__socials--icon-youtube"></i>
+                Youtube
+            </a>
+        </div>
+        <div class="footer__buttons">
+            <ul class="footer__buttons--list">
+                <li class="footer__buttons--list-item"><a href="">About</a></li>
+                <li class="footer__buttons--list-item"><a href="">Home</a></li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <p>Copyright KUET Cyborg. ALl rights reserved. 2022</p>
+        </div>
+    </section>
+
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/00eae9c8e2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

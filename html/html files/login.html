@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/LOGO_OFFICIAL.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Log in</title>
+</head>
+
+<body>
+
+    <section class="section-navigation-bar">
+
+        <nav class="navbar navbar-expand-lg cyborg-navbar">
+            <div class="container-fluid cyborg-navbar__container">
+                <a class="navbar-brand cyborg-navbar__brand" href="#">
+                    <img src="../resources/LOGO_OFFICIAL.png" alt="" class="cyborg-navbar__logo d-inline-block align-text-top">
+                </a>
+                <button button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class=""><i class="fa-solid fa-circle-chevron-down cyborg-navbar__toggler-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse cyborg-navbar__list-container" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav  cyborg-navbar__list">
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <?php
+                            
+                        ?>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="" class="nav-link">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </section>
+
+    <section class="section-login-register">
+
+        <div class="login-box">
+            <a href="#" class="login-box__button-login">Login</a>
+
+            <form id="login-form" method="post" action="#" class="login-form">
+
+                <div class="login-form__control">
+
+                    <label for="emailAddress" class="login-form__control--label">E-mail</label><br>
+                    <input type="text" name="username" id="login-email" class="login-form__control--email-field" placeholder="E-mail"><br>
+                    <div class="login-form__control--error-message d-flex justify-content-end" id="error-element-email">Error Message</div>
+
+                </div>
+
+                <div class="login-form__control">
+
+                    <label for="password" class="login-form__control--label">Password</label><br>
+                    <input id="login-password" name="password" type="password" class="login-form__control--password-field" placeholder="Password"><br>
+                    <div class="login-form__control--error-message d-flex justify-content-end" id="error-element-password">Error Message</div>
+                    <input type="submit" id="submit-button" name="submit-login" class="login-button text-center">
+
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/00eae9c8e2.js" crossorigin="anonymous"></script>
+    <script src="../javascript/login.js"></script>
+
+</body>
+
+</html>

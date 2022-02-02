@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/LOGO_OFFICIAL.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/b7ad1e7c7a.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <section class="section-navigation-bar">
+
+        <nav class="navbar navbar-expand-lg cyborg-navbar">
+            <div class="container-fluid cyborg-navbar__container">
+                <a class="navbar-brand cyborg-navbar__brand" href="#">
+                    <img src="../resources/LOGO_OFFICIAL.png" alt=""
+                        class="cyborg-navbar__logo d-inline-block align-text-top">
+                </a>
+                <button button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class=""><i class="fa-solid fa-circle-chevron-down cyborg-navbar__toggler-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse cyborg-navbar__list-container" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav  cyborg-navbar__list">
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+
+
+                        <!-- Have to put admin link here -->
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item cyborg-navbar__list-item">
+                            <a href="" class="nav-link">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <main>
+        <section class="dashboard">
+
+            <div class="dashboard__card-container row gx-5">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <button id="event-dashboard" class="dashboard__active dashboard__card">
+                        <div class="dashboard__card--inner">
+                            <h1 class="dashboard__card--inner-number">
+                                10
+                                <span class="dashboard__card--inner-icon"><i class="fa-regular fa-calendar-days"></i></span>
+                            </h1>
+                            <span class="dashboard__card--inner-name">Events</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <button id="intel-dashboard" class="dashboard__card">
+                        <div class="dashboard__card--inner">
+                            <h1 class="dashboard__card--inner-number">
+                                10
+                                <span class="dashboard__card--inner-icon"><i class="fa-regular fa-newspaper"></i></span>
+                            </h1>
+                            <span class="dashboard__card--inner-name">Intels</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <button id="member-dashboard" class="dashboard__card">
+                        <div class="dashboard__card--inner">
+                            <h1 class="dashboard__card--inner-number">
+                                10
+                                <span class="dashboard__card--inner-icon"><i class="fa-solid fa-person"></i></span>
+                            </h1>
+                            <span class="dashboard__card--inner-name">Members</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <button id="admin-dashboard" class="dashboard__card">
+                        <div class="dashboard__card--inner">
+                            <h1 class="dashboard__card--inner-number">
+                                2
+                                <span class="dashboard__card--inner-icon"><i class="fa-solid fa-lock"></i></span>
+                            </h1>
+                            <span class="dashboard__card--inner-name">Admins</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="events" class="event-box">
+                <div class="event-box__header">
+                    <h1>Event Title</h1>
+                    <span class="event-box__header--tag">Tag</span>
+                    <span class="event-box__header--date"><i class="fa-regular fa-calendar-days"></i> Date</span>
+                    <span class="event-box__header--edit">Edit</span>
+                    <span class="event-box__header--delete">Delete</span>
+                </div><hr>
+                <div class="event-box__inside">
+                    <a href="">
+                        <div class="event-box__inside-event">
+                            <h1>Intra Kuet PUBG Tournament</h1>
+                            <span class="event-box__inside-event--tag">PUBG</span>
+                            <span class="event-box__inside-event--date">Friday, 16 January 2022</span>
+                            <span class="event-box__inside-event--edit">Edit</span>
+                            <span class="event-box__inside-event--delete">Delete</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="event-box__inside-event">
+                            <h1>Intra Kuet VALORANT Tournament</h1>
+                            <span class="event-box__inside-event--tag">VALORANT</span>
+                            <span class="event-box__inside-event--date">Friday, 16 January 2022</span>
+                            <span class="event-box__inside-event--edit">Edit</span>
+                            <span class="event-box__inside-event--delete">Delete</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="event-box__inside-event">
+                            <h1>Cybertron VALORANT Tournament</h1>
+                            <span class="event-box__inside-event--tag">VALORANT</span>
+                            <span class="event-box__inside-event--date">Friday, 14 January 2022</span>
+                            <span class="event-box__inside-event--edit">Edit</span>
+                            <span class="event-box__inside-event--delete">Delete</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="event-box__button">
+                    <a class="login-button add-button" href="">Add Event</a>
+                </div>
+            </div>
+
+            <!-- Intels -->
+            <div id="intels" class="intel-box">
+                <div class="intel-box__header">
+                    <h1>Intel Title</h1>
+                    <span class="intel-box__header--tag">Tag</span>
+                    <span class="intel-box__header--date"><i class="fa-regular fa-calendar-days"></i> Date</span>
+                </div><hr>
+                <div class="intel-box__inside">
+                    <a href="">
+                        <div class="intel-box__inside-intel">
+                            <h1>Intra Kuet PUBG Tournament</h1>
+                            <span class="intel-box__inside-intel--tag">PUBG</span>
+                            <span class="intel-box__inside-intel--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="intel-box__inside-intel">
+                            <h1>Intra Kuet VALORANT Tournament</h1>
+                            <span class="intel-box__inside-intel--tag">VALORANT</span>
+                            <span class="intel-box__inside-intel--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="intel-box__inside-intel">
+                            <h1>Cybertron VALORANT Tournament</h1>
+                            <span class="intel-box__inside-intel--tag">VALORANT</span>
+                            <span class="intel-box__inside-intel--date">Friday, 14 January 2022</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="event-box__button">
+                    <a class="login-button add-button" href="">Add Intel</a>
+                </div>
+            </div>
+
+            <!-- Members -->
+            <div id="members" class="member-box">
+                <div class="member-box__header">
+                    <h1>Name</h1>
+                    <span class="member-box__header--tag">Designation</span>
+                    <span class="member-box__header--date">Batch</span>
+                </div><hr>
+                <div class="member-box__inside">
+                    <a href="">
+                        <div class="member-box__inside-member">
+                            <h1>Intra Kuet PUBG Tournament</h1>
+                            <span class="member-box__inside-member--tag">PUBG</span>
+                            <span class="member-box__inside-member--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="member-box__inside-member">
+                            <h1>Intra Kuet VALORANT Tournament</h1>
+                            <span class="member-box__inside-member--tag">VALORANT</span>
+                            <span class="member-box__inside-member--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="member-box__inside-member">
+                            <h1>Cybertron VALORANT Tournament</h1>
+                            <span class="member-box__inside-member--tag">VALORANT</span>
+                            <span class="member-box__inside-member--date">Friday, 14 January 2022</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="event-box__button">
+                    <a class="login-button add-button" href="">Add Member</a>
+                </div>
+            </div>
+
+            <!-- Admins -->
+            <div id="admins" class="admin-box">
+                <div class="admin-box__header">
+                    <h1>Name</h1>
+                    <span class="admin-box__header--tag">userid</span>
+                    <span class="admin-box__header--date">E-mail</span>
+                </div><hr>
+                <div class="admin-box__inside">
+                    <a href="">
+                        <div class="admin-box__inside-admin">
+                            <h1>Intra Kuet PUBG Tournament</h1>
+                            <span class="admin-box__inside-admin--tag">PUBG</span>
+                            <span class="admin-box__inside-admin--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="admin-box__inside-admin">
+                            <h1>Intra Kuet VALORANT Tournament</h1>
+                            <span class="admin-box__inside-admin--tag">VALORANT</span>
+                            <span class="admin-box__inside-admin--date">Friday, 16 January 2022</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="admin-box__inside-admin">
+                            <h1>Cybertron VALORANT Tournament</h1>
+                            <span class="admin-box__inside-admin--tag">VALORANT</span>
+                            <span class="admin-box__inside-admin--date">Friday, 14 January 2022</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/dashboard.js"></script>
+
+</body>
+
+</html>
